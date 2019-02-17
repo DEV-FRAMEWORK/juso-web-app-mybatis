@@ -1,0 +1,8 @@
+com/frankmoley/boot/landon/roomwebapp/ApiController.class
+com/frankmoley/boot/landon/roomwebapp/Room.class
+com/frankmoley/boot/landon/roomwebapp/AdminController.class
+com/frankmoley/boot/landon/roomwebapp/RoomRepository.class
+com/frankmoley/boot/landon/roomwebapp/RoomController.class
+com/frankmoley/boot/landon/roomwebapp/RoomServices.class
+com/frankmoley/boot/landon/roomwebapp/SecurityConfiguration.class
+com/frankmoley/boot/landon/roomwebapp/RoomWebAppApplication.class
