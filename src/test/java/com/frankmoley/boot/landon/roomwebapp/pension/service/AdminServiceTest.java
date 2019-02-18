@@ -2,9 +2,9 @@ package com.frankmoley.boot.landon.roomwebapp.pension.service;
 
 import lombok.extern.slf4j.Slf4j;
 
-import com.frankmoley.boot.landon.roomwebapp.pension.model.AdminModel;
-import com.frankmoley.boot.landon.roomwebapp.pension.model.Member;
-import com.frankmoley.boot.landon.roomwebapp.pension.service.AdminService;
+//import com.frankmoley.boot.landon.roomwebapp.pension.model.AdminModel;
+//import com.frankmoley.boot.landon.roomwebapp.pension.model.Member;
+//import com.frankmoley.boot.landon.roomwebapp.pension.service.AdminService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.slf4j.Logger;
@@ -21,32 +21,32 @@ import java.util.List;
 //@RunWith(SpringRunner.class)
 @Transactional
 public class AdminServiceTest {
-	private final Logger log = LoggerFactory.getLogger(AdminServiceTest.class);
-//	
-    @Autowired
-    AdminService adminService;
-
-	AdminModel adminModel;
-
+//	private final Logger log = LoggerFactory.getLogger(AdminServiceTest.class);
+////	
+//    @Autowired
+//    AdminService adminService;
 //
-    @Test
-    public void getMemberById() {
-    	String id = "1";
-    	Member member = adminService.getMemberById(id);
-        log.info("member : {}", member);
-    }
-
-    @Test
-    public void getAllMembers() {
-
-    	adminModel.setRoomId("1");
-    	adminModel.setBedInfo("2");
-    	adminModel.setName("aaa");
-    	adminModel.setRoomNumber("3");
-    	
-        List<AdminModel> list = adminService.selectListAdmin(adminModel);  
-        log.info("Admins : {}", list);
-    }
+//	AdminModel adminModel;
+//
+////
+//    @Test
+//    public void getMemberById() {
+//    	String id = "1";
+//    	Member member = adminService.getMemberById(id);
+//        log.info("member : {}", member);
+//    }
+//
+//    @Test
+//    public void getAllMembers() {
+//
+//    	adminModel.setRoomId("1");
+//    	adminModel.setBedInfo("2");
+//    	adminModel.setName("aaa");
+//    	adminModel.setRoomNumber("3");
+//    	
+//        List<AdminModel> list = adminService.selectListAdmin(adminModel);  
+//        log.info("Admins : {}", list);
+//    }
 
 
 //    @Test
