@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+        
+<mapper namespace="com.frankmoley.boot.landon.roomwebapp.pension.dao.AdminDao">
+					
+     <select id="selectListAdmin" parameterType="String" resultType="com.frankmoley.boot.landon.roomwebapp.pension.model.AdminModel">
+    	SELECT room_id as roomId, name as name, room_number as roomNumber, bed_info as bedInfo
+    	  FROM ROOM 
+    </select> 
+    
+    <select id="getMemberById" parameterType="String" resultType="com.frankmoley.boot.landon.roomwebapp.pension.model.Member">
+  		SELECT room_id as roomId, name as name, room_number as roomNumber, bed_info as bedInfo
+    	  FROM 
+    	   ROOM  
+    	 WHERE room_id = #{id} 
+    </select>
+    
+</mapper>

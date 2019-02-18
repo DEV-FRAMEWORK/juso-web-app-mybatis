@@ -15,11 +15,14 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
+import com.frankmoley.boot.landon.roomwebapp.RoomWebAppApplication;
 import com.frankmoley.boot.landon.roomwebapp.common.CUDInterceptor;
+
 
 @Configuration
 @EnableConfigurationProperties
 @MapperScan(basePackages="com.frankmoley.boot.landon.roomwebapp.pension.dao")
+//@MapperScan(basePackageClasses = RoomWebAppApplication.class)
 @EnableTransactionManagement
 @EnableAutoConfiguration(exclude = { DataSourceAutoConfiguration.class, DataSourceTransactionManagerAutoConfiguration.class })
 public class PersistenceConfiguration {

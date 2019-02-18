@@ -13,9 +13,9 @@
             <th>Bed Info</th>
         </tr>
         <tr th:each="room:${rooms}">
-            <td th:text="${room.number}"></td>
+            <td th:text="${room.numberId}"></td>
             <td th:text="${room.name}"></td>
-            <td th:text="${room.info}"></td>
+            <td th:text="${room.bedInfo}"></td>
         </tr>
     </table>
 

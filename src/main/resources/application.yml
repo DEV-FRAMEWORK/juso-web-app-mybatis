@@ -7,3 +7,24 @@ spring:
   console:
     enabled: true
     path: /console
+    
+    
+ datasource:
+   h2:
+      platform: h2
+      driverClassName: org.h2.Driver
+      jdbcUrl: jdbc:h2:~/testdb;
+      username: sa
+      password:
+
+mybatis:
+  mapper-locations: classpath:mappers/**/*.xml
+  configuration:
+    lazyLoadingEnabled: true
+    aggressiveLazyLoading: false
+    mapUnderscoreToCamelCase: true
+ 
+logging:
+  level:
+    root: WARN
+    com.frankmoley.boot.landon.roomwebapp.pension.dao: TRACE 
